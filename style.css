@@ -158,9 +158,9 @@ section.step {
     text-align: center;
 }
 
-/* Typography Overhaul - POWERFUL */
+/* Typography Overhaul - BALANCED */
 .hero-text {
-    font-size: 5rem;
+    font-size: 3.5rem;
     /* Mobile Base */
     font-weight: 800;
     /* Extra Bold */
@@ -178,18 +178,18 @@ section.step {
 
 @media (min-width: 768px) {
     .hero-text {
-        font-size: 8rem;
-        /* Desktop Massive */
+        font-size: 6rem;
+        /* Desktop Large (Reduced from Massive) */
     }
 }
 
 .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     /* Mobile */
     color: var(--text-primary);
     /* White for max contrast, not secondary grey */
     max-width: 800px;
-    line-height: 1.5;
+    line-height: 1.6;
     font-weight: 600;
     /* Bold */
     opacity: 0;
@@ -198,10 +198,12 @@ section.step {
 
 @media (min-width: 768px) {
     .subtitle {
-        font-size: 3rem;
-        /* Desktop Huge */
+        font-size: 2.2rem;
+        /* Desktop */
     }
 }
+
+
 
 .next-btn {
     background: linear-gradient(90deg, var(--accent), var(--accent-2));
@@ -542,10 +544,14 @@ body.light-mode #music-toggle:hover {
 .dream-entry {
     animation: dreamEntry 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
+
 /* Floating Memories */
 .memory-container {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
     z-index: 1;
     overflow: hidden;
@@ -556,7 +562,7 @@ body.light-mode #music-toggle:hover {
     opacity: 0;
     filter: sepia(0.3) contrast(1.1);
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     animation: floatMemory 15s linear infinite;
 }
 
@@ -565,12 +571,15 @@ body.light-mode #music-toggle:hover {
         transform: translateY(110vh) rotate(0deg) scale(0.8);
         opacity: 0;
     }
+
     10% {
         opacity: 0.6;
     }
+
     90% {
         opacity: 0.6;
     }
+
     100% {
         transform: translateY(-20vh) rotate(10deg) scale(1);
         opacity: 0;
@@ -580,7 +589,8 @@ body.light-mode #music-toggle:hover {
 /* Final Reveal Text */
 .final-text-container {
     position: fixed;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: center;
@@ -589,12 +599,14 @@ body.light-mode #music-toggle:hover {
 
 .final-text {
     font-family: 'Outfit', sans-serif;
-    font-size: 3rem; /* Mobile Base */
+    font-size: 3rem;
+    /* Mobile Base */
     font-weight: 700;
     color: #1a1a1a;
     letter-spacing: 2px;
     opacity: 0;
-    animation: glideUp 2s ease forwards 1s; /* Slow reveal */
+    animation: glideUp 2s ease forwards 1s;
+    /* Slow reveal */
 }
 
 @media (min-width: 768px) {
@@ -602,4 +614,3 @@ body.light-mode #music-toggle:hover {
         font-size: 5rem;
     }
 }
-
